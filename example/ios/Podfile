@@ -11,6 +11,7 @@ target 'Videokit2Example' do
 
   # Flags change depending on the env values.
   flags = get_default_flags()
+  pod "Texture",:inhibit_warnings => true, :modular_headers => true
 
   use_react_native!(
     :path => config[:reactNativePath],

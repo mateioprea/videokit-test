@@ -18,3 +18,6 @@ const Videokit2 = NativeModules.Videokit2  ? NativeModules.Videokit2  : new Prox
 export function multiply(a: number, b: number): Promise<number> {
   return Videokit2.multiply(a, b);
 }
+
+
+export {usePlayerControls, Video} from './VideoKit'
